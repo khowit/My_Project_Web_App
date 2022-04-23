@@ -30,7 +30,8 @@ var db *sql.DB
 
 func main() {
 	var err error
-	db, err = sql.Open("mysql", "root:admin@tcp(localhost:3306)/travel")
+	//you can change your database: username, password, localhost, dbname
+	// db, err = sql.Open("mysql", "username:password@tcp(localhost:XXXX)/dbname")
 	if err != nil {
 		panic(err)
 	}
